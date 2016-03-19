@@ -13,37 +13,33 @@
   </header>
 
   <form>
-   <fieldset>
+  <fieldset>
     <legend>Your Face</legend>
-    Your image: <br>
-    Image preview:
-   </fieldset>
-  </form>
+      Your image: <input type="file" name="yourImage"><br>
+      Image preview: <img id="preview" \>
+  </fieldset>
+  <fieldset>
+    <legend>Your General Details</legend>
+      Name: <input type="text" name="name"><br>
+      Gender: <input type="radio" name="gender" value="male">Male <input type="radio" name="gender" value="female">Female<br>
+      Age: <input type="number" name="age"><br>
+      Date of birth: <input type="date" name="date"><br>
+      Favourite Color: <input type="color" name="color"><br>
+      Wich Country: <input type="select">
+  </fieldset>
+  <fieldset>
+    <legend>Your indicators</legend>
+      height: short<input type="range" min="0" max=100>tall <br>
+      salary: poor<input type="range" min="0" max=100>rich
 
-  <form>
-    <fieldset>
-      <legend>Your General Details</legend>
-      Name: <input type="text"><br>
-      Email: <input type="text"><br>
-      Date of birth: <input type="text">
-    </fieldset>
-  </form>
-
-  <form>
-    <fieldset>
-      <legend>Your indicators</legend>
-
-    </fieldset>
-  </form>
-
-    <form>
-    <fieldset>
-      <legend>Your Contact information</legend>
-      Email: <input type="text"><br>
-      Mobile: <input type="text"><br>
-      Address: <input type="text"><br>
-      <span>Method to contact you:</span>
-    </fieldset>
+  </fieldset>
+  <fieldset>
+    <legend>Your Contact information</legend>
+      Email: <input type="email"><br>
+      Mobile: <input type="tel"><br>
+      Address: <textarea rows="2" cols="30" name="address"></textarea><br>
+      Method to contact you: <input type="radio" name="email">email <input type="radio" name="whatsapp">whatsapp <input type="radio" name="chat">in-app chat
+  </fieldset>
   </form>
 </body>
 </html>
