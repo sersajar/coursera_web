@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Date4Stie.net</title>
+  <style type="text/css">
+    h1 {text-transform: capitalize;}
+    fieldset {background-color: light-yellow; border: yellow 10px solid; margin-bottom: 10px; width: 720px;}
+    label {width: 180px; display: inline-block; text-align: right; vertical-align: text-top; text-transform: capitalize;}
+    label:hover { font-size:40px } input:hover { font-size:40px }
+    span {text-align: center; padding: 5px; margin:5px;} span.left{color: white; background: maroon;} span.right{color:white; background: purple;}
+    textarea {width:360px; height: 50px;}
+    .class {width: auto;}
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>please enter your details for our dating website</h1>
+  </header>
+
+  <form action="https://ihome.ust.hk/~rossiter/cgi-bin/show_everything.php" enctype="multipart/form-data" method="post">
+    <fieldset>
+      <legend>Your Face</legend>
+        <label for="avatar">Your image: </label>
+        <input type="file" name="avatar" required><br>
+        <label for="prewiew">Image preview: </label>
+        <img src="" id="preview" \>
+    </fieldset>
+    <fieldset>
+      <legend>Your General Details</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" class="auto">Male <input type="radio" id="female" name="gender" value="female" class="auto">Female<br>
+        <label for="age">Age:</label>
+        <input type="number" name="age" id="age"><br>
+        <label for="birth">Date of birth:</label>
+        <input type="date" id="date" name="date"><br>
+        <label for="color">Favourite Color:</label>
+        <input type="color" name="color"><br>
+        <label for="country">Wich Country: </label>
+        <select name="country">
+            <option value="">no selection</option>
+            <option value="en">England</option>
+            <option value="es">Spain</option>
+            <option value="fr">France</option>
+            <option value="nl">Holland</option>
+            <option value="ru">Russia</option>
+        </select>
+    </fieldset>
+    <fieldset>
+      <legend>Your indicators</legend>
+      <label for="height">height: </label><span class="left"> short</span>
+        <input type="range" min="0" max=100><span class="right"> tall</span><br>
+        <label for="salary">salary: </label> <span class="left"> poor</span>
+        <input type="range" min="0" max=100><span class="right"> rich</span>
+    </fieldset>
+    <fieldset>
+      <legend>Your Contact information</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"><br>
+        <label for="mobile">Mobile:</label>
+        <input type="tel" id="mobile" name="mobile"><br>
+        <label for="address">Address:</label>
+        <textarea rows="2" cols="30" name="address" id="address"></textarea><br>
+        <label for="contact">Method to contact you:</label>
+        <input type="checkbox" class="auto">email <input type="checkbox" class="auto">whatsapp <input type="checkbox" class="auto">in-app chat
+    </fieldset>
+    <input type="submit"></input>
+  </form>
+    <script src="https://www.cse.ust.hk/~rossiter/dating_web_site.js"></script>
+</body>
+</html>
