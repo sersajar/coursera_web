@@ -3,12 +3,8 @@
 <head>
     <title>Matching Game</title>
     <style>
-        header {
-            text-align: center;
-        }
-        img {
-            position: absolute;
-        }
+        header {text-align: center;}
+        img {position: absolute;}
         div {
             position: absolute;
             width: 500px;
@@ -32,15 +28,16 @@
         <div id="leftSide"></div>
         <div id="rightSide"></div>
     </section>
-
     <!-- visible part top from here-->
     <script type="text/javascript">
         var numberOfFaces = 5;
-        var theLeftSide = document.getElementById("leftSide");
+        var theLeftSide = document.getElementById("leftSide"),
+            theRightSide = document.getElementById("rightSide");
 
         function generateFaces() {
             for (var i = 0; i < numberOfFaces; i++) {
-                var randomTop = Math.floor(Math.random() * 400),randomRight = Math.floor(Math.random() * 400);
+                var randomTop = Math.floor(Math.random() * 400),
+                    randomRight = Math.floor(Math.random() * 400);
                 var face = document.createElement("img");
                 face.src = "smile.png";
                 face.style.bottom = randomTop + "px";
@@ -48,7 +45,10 @@
                 face.setAttribute("alt", "happy face");
                 theLeftSide.appendChild(face);
             };
-        }; // finish part2
+        var leftSideImages = theLeftSide.cloneNode(true);
+        leftSideImages.removeChild(leftSideImages.lastChild);
+        rightSide.appendChild(leftSideImages);
+        }; //finish part 3
     </script>
 </body>
 </html>

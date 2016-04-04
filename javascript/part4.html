@@ -3,12 +3,8 @@
 <head>
     <title>Matching Game</title>
     <style>
-        header {
-            text-align: center;
-        }
-        img {
-            position: absolute;
-        }
+        header {text-align: center;}
+        img {position: absolute;}
         div {
             position: absolute;
             width: 500px;
@@ -21,7 +17,7 @@
     </style>
 </head>
 
-<body id="theBody" onload="generateFaces()">
+<body onload="generateFaces()">
     <header>
         <h1>Matching Game</h1>
         <p>Click on the extra smiling face on the left.</p>
@@ -32,15 +28,17 @@
         <div id="leftSide"></div>
         <div id="rightSide"></div>
     </section>
-
     <!-- visible part top from here-->
     <script type="text/javascript">
         var numberOfFaces = 5;
-        var theLeftSide = document.getElementById("leftSide");
+        var theLeftSide = document.getElementById("leftSide"),
+            theRightSide = document.getElementById("rightSide");
+        var theBody = document.getElementsByTagName("body")[0];
 
-        function generateFaces() {
+        function generateFaces() { //generating faces
             for (var i = 0; i < numberOfFaces; i++) {
-                var randomTop = Math.floor(Math.random() * 400),randomRight = Math.floor(Math.random() * 400);
+                var randomTop = Math.floor(Math.random() * 400),
+                    randomRight = Math.floor(Math.random() * 400);
                 var face = document.createElement("img");
                 face.src = "smile.png";
                 face.style.bottom = randomTop + "px";
@@ -48,7 +46,22 @@
                 face.setAttribute("alt", "happy face");
                 theLeftSide.appendChild(face);
             };
-        }; // finish part2
+
+            //copy faces from left to right
+            var leftSideImages = theLeftSide.cloneNode(true);
+            leftSideImages.removeChild(leftSideImages.lastChild);
+            rightSide.appendChild(leftSideImages);
+            //cheat to help debugging
+            theLeftSide.lastChild.style.background = "red"; 
+            
+            // alert messaje if you click wrong
+            theLeftSide.onclick = function gameOver() {
+                alert("Game Over!");
+                theBody.onclick = null;
+                theLeftSide.lastChild.onclick = null; 
+            };
+             
+        }
     </script>
 </body>
 </html>
