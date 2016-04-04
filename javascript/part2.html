@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Matching Game</title>
+    <style>
+        header {
+            right: 250px;
+        }
+        img {
+            position: absolute;
+        }
+        div {
+            position: absolute;
+            width: 500px;
+            height: 500px;
+        }
+        #rightSide {
+            left: 500px;
+            border-left: 1px solid black;
+        }
+    </style>
+</head>
+
+<body id="theBody" onload="generateFaces()">
+    <header>
+        <h1>Matching Game</h1>
+        <p>Click on the extra smiling face on the left.</p>
+    </header><!-- /header -->
+    <!-- visible part down from here-->
+    <hr>
+    <section>
+        <div id="leftSide"></div>
+        <div id="rightSide"></div>
+    </section>
+
+    <!-- visible part here top from here-->
+    <script type="text/javascript">
+        var numberOfFaces = 5;
+        var theLeftSide = document.getElementById("leftSide");
+        var randomTop = Math.floor(Math.random() * 400),
+            randomRight = Math.floor(Math.random() * 400);
+
+
+
+        function generateFaces() {
+            for (var i = 0; i < 5; i++) {
+                var face = document.createElement("img");
+                face.src = "smile.png";
+                leftSide.style.bottom = randomTop + "px";
+                leftSide.style.left = randomRight + "px";
+                face.setAttribute("alt", "happy face");
+                theLeftSide.appendChild(face);
+        };
+        theLeftSide.cloneNode(true);
+    }
+    </script>
+</body>
+</html>
