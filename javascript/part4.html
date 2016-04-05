@@ -17,7 +17,7 @@
     </style>
 </head>
 
-<body onload="generateFaces()">
+<body id="theBody" onload="generateFaces()">
     <header>
         <h1>Matching Game</h1>
         <p>Click on the extra smiling face on the left.</p>
@@ -40,7 +40,7 @@
                 var randomTop = Math.floor(Math.random() * 400),
                     randomRight = Math.floor(Math.random() * 400);
                 var face = document.createElement("img");
-                face.src = "smile.png";
+                face.src = "http://home.cse.ust.hk/~rossiter/mooc/matching_game/smile.png";
                 face.style.bottom = randomTop + "px";
                 face.style.left = randomRight + "px";
                 face.setAttribute("alt", "happy face");
@@ -52,15 +52,28 @@
             leftSideImages.removeChild(leftSideImages.lastChild);
             rightSide.appendChild(leftSideImages);
             //cheat to help debugging
-            theLeftSide.lastChild.style.background = "red"; 
-            
+            theLeftSide.lastChild.style.background = "red";
+
+            //Add an event handler function to the extra face
+            theLeftSide.lastChild.onclick= function nextLevel(event){
+                while (theLeftSide.firstChild) {
+                    theLeftSide.removeChild(theLeftSide.firstChild);
+                }
+                 while (theRightSide.firstChild) {
+                    theRightSide.removeChild(theRightSide.firstChild);
+                }
+                event.stopPropagation();
+                numberOfFaces += 5;
+                generateFaces();
+            };
+
             // alert messaje if you click wrong
             theLeftSide.onclick = function gameOver() {
                 alert("Game Over!");
                 theBody.onclick = null;
-                theLeftSide.lastChild.onclick = null; 
+                theLeftSide.lastChild.onclick = null;
+                location.reload();
             };
-             
         }
     </script>
 </body>
