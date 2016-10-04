@@ -1,0 +1,26 @@
+{
+  "name": "conFusion",
+  "homepage": "https://github.com/sersajar/coursera_web",
+  "authors": [
+    "Sergi Sabate <sersajar@gmail.com>"
+  ],
+  "description": "Awesome Restaurant",
+  "main": "index.html",
+  "keywords": [
+    "conFusion",
+    "fusion",
+    "Restaurant"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.6.3"
+  }
+}
