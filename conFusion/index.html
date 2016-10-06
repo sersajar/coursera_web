@@ -172,7 +172,7 @@
                     <li><a href="contactus.html"><span class="fa fa-envelope-o" aria-hidden="true"></span> Contact</a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
-                	<li><a data-toggle="modal" data-target="#loginModal"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+                	<li><a id="login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
                 </ul>
             </div>
         </div>
@@ -194,7 +194,7 @@
                 </div>
                 <div class="col-xs-12 col-sm-2">
                     <p style="padding:40px;"></p>
-                    <a id="reserveButton" type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reservationModal" role="button">Reserve Table</a>
+                    <a id="reserveButton" type="button" class="btn btn-warning btn-block" role="button">Reserve Table</a>
                 </div>
             </div>
         </div>
@@ -388,6 +388,17 @@
             $("#mycarousel").carousel('cycle');
         });
     });
+</script>
+
+<script>
+    $(document).ready(function(){
+            $("#login").click(function(){
+                $('#loginModal').modal('toggle');
+            });
+            $("#reserveButton").click(function(){
+                $('#reservationModal').modal('toggle');
+            });
+        })
 </script>
 
 <!-- <script>
