@@ -1,0 +1,17 @@
+<ul class="list-group">
+  <li ng-repeat="item in $ctrl.items">
+    ({{ item.short_name}}) {{ item.name }} - {{ item.description }}
+    <button ng-click="$ctrl.remove($index);">Don't want this one!</button>
+  </li>
+</ul>
+
+
+<!-- <div>
+  <ul class="list-group">
+    <li class="list-group-item" ng-repeat="item in foundList.items">
+      <h4>{{$index + 1}}. {{ item.name }} ({{ item.short_name }}) <button class="btn btn-danger btn-sm" ng-click="foundList.onRemove({index: $index})">We Don't want this one!</button></h4>
+      {{ item.description }}
+    </li>
+  </ul>
+  <div class="alert alert-danger" ng-if="foundList.isEmpty()">No Items Found</div>
+<div> -->
