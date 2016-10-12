@@ -1,7 +1,38 @@
+body {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.jumbotron {
+    text-align: center;
+}
+
+#logo-jumbo {
+    width: 90%;
+    max-width: 250px;
+    min-width: 125px;
+    margin-left: -20px;
+    margin-top: 20px;
+}
+
+h1 {
+    padding: 20px;
+}
+
 #nav-logo {
+    margin-left: -10px;
     margin-top: -15px;
-    height: 50px;
     width: 50px;
 }
 
+#cbd-logo {
+    margin-left: 20px;
+    width: 95%;
+    max-width: 250px;
+}
 
+.breadcrumb {
+    width: 95%;
+}
+
+navigation
