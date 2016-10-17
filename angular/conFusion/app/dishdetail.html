@@ -26,28 +26,60 @@
 <body>
 
     <div class="container">
-        <div class="row row-content">
-            <div class="col-xs-12">
-                <p>Put the dish details here</p>
-            </div>
-            <div class="col-xs-9 col-xs-offset-1">
-                <p>Put the comments here</p>
-            </div>
-        </div>
+      <div class="row row-content" ng-controller="dishDetailController as dishCtrl">
+          <div class="col-xs-12">
 
+            <div class="media-left media-middle">
+              <a href="#">
+               <img class="media-object img-thumbnail"
+                ng-src={{dishCtrl.dish.image}} alt="images of different dishes">
+              </a>
+            </div>
+
+            <div class="media-body">
+              <h2 class="media-heading">{{dishCtrl.dish.name}}
+               <span class="label label-danger">{{dishCtrl.dish.label}}</span>
+               <span class="badge">{{dishCtrl.dish.price | currency}}</span>
+              </h2>
+              <p>{{dishCtrl.dish.description}}</p>
+            </div>
+
+          </div>
+
+          <div class="col-xs-9 col-xs-offset-1">
+            <div>
+              <h3>Customer Comments</h3>
+              <p>Sort by: <input type="text" placeholder="author, date or rating" ></p>
+
+            </div>
+
+            <div ng-repeat="comments in dishCtrl.dish.comments">
+              <blockquote>
+                <p> {{dishCtrl.dish.comments[$index].rating}} Stars </p>
+                <p> {{dishCtrl.dish.comments[$index].comment}} </p>
+                <footer>
+                  <cite title="Source Title">
+                   {{dishCtrl.dish.comments[$index].author}}, </cite>
+                   {{dishCtrl.dish.comments[$index].date}}
+                </footer>
+              </blockquote>
+            </div>
+          </div>
+
+      </div>
     </div>
 
     <script src="../bower_components/angular/angular.min.js"></script>
     <script>
 
         var app = angular.module('confusionApp',[]);
-        
+
         app.controller('dishDetailController', function() {
 
             var dish={
                           name:'Uthapizza',
                           image: 'images/uthapizza.png',
-                          category: 'mains', 
+                          category: 'mains',
                           label:'Hot',
                           price:'4.99',
                           description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
@@ -82,12 +114,12 @@
                                    author:"25 Cent",
                                    date:"2011-12-02T17:57:28.556094Z"
                                }
-                               
+
                            ]
                     };
-            
+
             this.dish = dish;
-            
+
         });
 
     </script>
