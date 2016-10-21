@@ -1,17 +1,13 @@
-body {
-    width: 90%;
-    margin: 0 auto;
-}
-
 .jumbotron {
     text-align: center;
+    padding-bottom: 25px;
 }
 
 #logo-jumbo {
-    width: 90%;
-    max-width: 250px;
-    min-width: 125px;
-    margin-left: -20px;
+    width: 95%;
+    max-width: 220px;
+    min-width: 160px;
+    margin: 0 auto;
     margin-top: 20px;
 }
 
@@ -25,14 +21,36 @@ h1 {
     width: 50px;
 }
 
-#cbd-logo {
-    margin-left: 20px;
+#cbd {
+    margin-left: 45px;
     width: 95%;
     max-width: 250px;
 }
 
-.breadcrumb {
-    width: 95%;
+.hovMouse:hover {
+    border: solid 2px yellow;
 }
 
-navigation
+#mol {
+    margin-left: 45px;
+    width: 90%;
+    max-width: 250px;
+    padding-bottom: 50px;
+}
+
+#Cannabinoid {
+    padding: 50px 0;
+}
+
+footer {
+    background-color: #eee;
+}
+
+.strains {   
+    margin: 0 auto;
+    max-width: 220px;
+}
+
+.image-responsive {
+    width: 100%;
+}

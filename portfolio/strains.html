@@ -5,7 +5,7 @@
    <meta charset="utf-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <title>4x4 Seeds - Medical Cannabis</title>
+   <title>4x4 Seeds Medical Cannabis</title>
    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
    <link rel="stylesheet" type="text/css" href="css/bootstrap-social.css">
@@ -15,7 +15,7 @@
 
 <body>
 
-   <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+   <nav id="nav-barra" class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <div class="container">
 
          <div class="navbar-header">
@@ -25,30 +25,183 @@
                <span class="icon-bar"></span>
                <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.html"><img src="img/logo.png" height="30" width="41" alt=""></a>
+            <a class="navbar-brand" href="index.html"><img id="nav-logo" src="img/logo.png" alt="logo 4x4"></a>
          </div>
 
          <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
                <li>
                   <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
-               </li>
-               <li class="active">
-                  <a href="strains.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Strains</a>
-               </li>
+               </li>               
+               <li class="active dropdown">
+                  <a href="strains.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                      <li><a href="strains.html"><strong>All Our Strains</strong></a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Classic</li>
+                      <li><a href="#">Yumbolt Tangerine</a></li>
+                      <li><a href="#">One peace</a></li>
+                      <li><a href="#">MasK Cheesee </a></li>
+                      <li><a href="#">White Willow</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li class="dropdown-header">Autos</li>
+                      <li><a href="#">Critical Express</a></li>
+                      <li><a href="#">Tutti Frutti Ya!</a></li>
+                  </ul>
+               </li>               
                <li>
-                  <a href=".html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Contact</a>
+                  <a href="knowledge.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Knowledge</a>
                </li>
                <li>
                   <a href="contactus.html"><span class="fa fa-envelope-o" aria-hidden="true"></span> Contact</a>
                </li>
             </ul>
+
+            <ul class="nav navbar-nav navbar-right">
+               <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Language <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="#" class="language" rel="es-ES"><img src="/img/es_ES.png" alt="Español" /></a></li>
+                    <li><a href="#" class="language" rel="en-US"><img src="/img/en_US.png" alt="English" /></a></li>
+                  </ul>
+               </li>
+            </ul>
+
          </div>
 
       </div>
    </nav>
 
+   <header class="jumbotron">
+    <div class="container">
 
+      <div class="row row-header">
+         <div class="col-xs-12 col-sm-9">
+            <p style="padding:20px;"></p>
+            <h2>Our Strains</h2><br><br>
+            <p id="jumboTextStrains">We select, cross and stabilize our strains using old school methods.<br> At the moment have a few girls in our array of creations.<br><br>Click on the buttons to change the view between Classic and Autos</p>
+         </div>
+
+         <div style="margin: 0 auto;" class="col-xs-12 col-sm-3"">
+            <img id="logo-jumbo" src="img/logo.png" alt="logo-index">
+            <p style="padding:5px;"></p>
+
+            <a id="classic" type="button" class="btn btn-info btn-block strains" role="button">Classic</a>             
+            <a id="autoFlower" type="button" class="btn btn-info btn-block strains" role="button">Autos</a>
+         </div>
+      </div>
+
+    </div>
+   </header>
+
+   <div class="container">
+   <!-- Breadcrumb -->
+      <div class="row">
+         <div class="col-xs-12">
+            <ul class="breadcrumb">
+               <li><a href="index.html">Home</a></li>
+               <li class="active">Strains</li>
+            </ul>
+         </div>
+      </div>
+   <!-- Breadcrumb -->
+      <div class="row row-content">
+         <div class="col-xs-10 col-xs-offset-1">
+
+            <h2>Classic Strains</h2>
+            <p style="padding:10px;"></p>
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="active">
+                <a href="#peter" aria-controls="peter"
+                 role="tab" data-toggle="tab">Peter Pan, CEO</a></li>
+                <li role="presentation"><a href="#danny"
+                 aria-controls="danny" role="tab"
+                 data-toggle="tab">Danny Witherspoon, CFO</a></li>
+                <li role="presentation"><a href="#agumbe"
+                 aria-controls="agumbe" role="tab"
+                 data-toggle="tab">Agumbe Tang, CTO</a></li>
+                <li role="presentation"><a href="#alberto"
+                 aria-controls="alberto" role="tab"
+                 data-toggle="tab">Alberto Somayya, Exec. Chef</a></li>
+            </ul>
+   
+            <div class="tab-content">
+               <div role="tabpanel" class="tab-pane fade in active" id="peter">
+                  <h3>Yumbolt <small>Chief Epicurious Officer</small></h3>
+                  <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
+                  <p style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+               </div>
+
+               <div role="tabpanel" class="tab-pane" id="danny">
+                  <h3>Dhanasekaran Witherspoon <small>Chief Food Officer</small></h3>
+                  <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
+                  <p style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+               </div>
+    
+               <div role="tabpanel" class="tab-pane" id="agumbe">
+                  <h3>Agumbe Tang <small>Chief Taste Officer</small></h3>
+                  <p>Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
+                  <p style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+               </div>
+                         
+               <div role="tabpanel" class="tab-pane" id="alberto">
+                  <h3>Alberto Somayya <small>Executive Chef</small></h3>
+                  <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                  <p style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+               </div>
+            </div>
+
+         </div>
+      </div>
+      <p style="padding:40px;"></p>
+   </div>
+
+     <footer class="row-footer">
+        <div class="container">
+           <div class="row">
+
+              <div class="col-xs-5 col-xs-offset-1 col-sm-2 col-sm-offset-1">
+                 <h5>Links</h5>
+                 <ul class="list-unstyled">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Strains</a></li>
+                    <li><a href="#">Knowledge</a></li>
+                    <li><a href="#">Contact</a></li>
+                 </ul>
+              </div>
+
+              <div class="col-xs-6 col-sm-5">
+                 <h5>Contact Us</h5>
+                 <address>
+                 <i class="fa fa-phone"></i>: +35-977311645<br>
+                 <i class="fa fa-envelope"></i>:
+                    <a href="mailto:confusion@food.net">info@4x4seeds.com</a>
+                 </address>
+              </div>
+
+              <div class="col-xs-12 col-sm-4">
+                 <div class="nav navbar-nav" style="padding: 40px 10px;">
+                    <a class="btn btn-social-icon btn-google-plus" href="http://google.com/+"><i class="fa fa-google-plus"></i></a>
+                    <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook"></i></a>
+                    <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin"></i></a>
+                    <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter"></i></a>
+                    <a class="btn btn-social-icon btn-youtube" href="http://youtube.com/"><i class="fa fa-youtube"></i></a>
+                    <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o"></i></a>
+                 </div>
+              </div>
+
+              <div class="col-xs-12">
+                 <p style="padding:10px;"></p>
+                 <p align=center>© Copyright 2016 4x4 Seeds</p>
+              </div>
+
+           </div>
+        </div>
+     </footer>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
