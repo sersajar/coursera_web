@@ -22,7 +22,7 @@
    <!-- Modal -->
       <div class="modal fade" id="cbdModal" role="dialog">
          <div class="modal-dialog">
-             
+
                <!-- Modal content-->
             <div class="modal-content">
                   <div class="modal-header">
@@ -52,12 +52,12 @@ While lauded for it's effect on epilepsy, recent cannabis research has identifie
                      <li>13. Return appetite</li>
                   </ul>
                </div>
-           
+
                <div class="modal-footer">
                   <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                </div>
             </div>
-         
+
        </div>
      </div>
    <!-- Modal -->
@@ -81,8 +81,8 @@ While lauded for it's effect on epilepsy, recent cannabis research has identifie
                   <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
                </li>
                <li class="dropdown">
-                  <a href="strains.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                  <a href="strains.html" id="strainToogle" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role=menu>
                       <li><a href="strains.html"><strong>All Our Strains</strong></a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Classic</li>
@@ -166,7 +166,7 @@ While lauded for it's effect on epilepsy, recent cannabis research has identifie
             <p style="padding:10px;"></p>
          </div>
 
-         
+
 
          <div class="col-xs-12 col-sm-4 pull-right ">
             <a data-toggle="modal" data-target="#cbdModal">
@@ -178,7 +178,7 @@ While lauded for it's effect on epilepsy, recent cannabis research has identifie
 
       <div class="row row-content">
          <div class="col-xs-12">
-            
+
          </div>
       </div>
 
@@ -238,8 +238,14 @@ While lauded for it's effect on epilepsy, recent cannabis research has identifie
             $("#cbd").click(function(){
                 $('#cbdModal').modal('toggle');
             })
-            
+            $( "#strainToogle" ).click(function() {
+              $( this ).toggleClass( "disabled");
+
+            });
+
         });
+
+
 </script>
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
