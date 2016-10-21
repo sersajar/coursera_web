@@ -20,14 +20,22 @@ h1 {
     width: 50px;
 }
 
-#cbd-logo {
-    margin-left: 25px;
+#cbd {
+
+    margin-left: 45px;
     width: 95%;
     max-width: 250px;
 }
 
-.breadcrumb {
-    width: 95%;
+.hovMouse:hover {
+    border: solid 2px yellow;
+}
+
+#mol {
+    margin-left: 45px;
+    width: 90%;
+    max-width: 250px;
+    padding-bottom: 50px;
 }
 
 #Cannabinoid {
@@ -35,19 +43,27 @@ h1 {
     padding: 50px 0;
 }
 
-#mol {
-    margin-left: 50px;
-    width: 90%;
-    max-width: 250px;
-    padding-bottom: 50px;
-}
+
 
 footer {
     background-color: #eee;
 }
 
 .strains {
-    padding-left: 25px;
+    
     margin: 0 auto;
     max-width: 220px;
+}
+
+/*#jumboTextStrains {
+    margin-right: 40px;
+    padding-right: 70px;
+}
+*/
+.jumbotron {
+    padding-bottom: 25px;
+}
+
+.image-responsive {
+    width: 100%;
 }
