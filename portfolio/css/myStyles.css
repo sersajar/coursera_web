@@ -1,9 +1,10 @@
 .jumbotron {
     text-align: center;
+    padding-bottom: 25px;
 }
 
 #logo-jumbo {
-    width: 90%;
+    width: 95%;
     max-width: 220px;
     min-width: 160px;
     margin: 0 auto;
@@ -21,7 +22,6 @@ h1 {
 }
 
 #cbd {
-
     margin-left: 45px;
     width: 95%;
     max-width: 250px;
@@ -39,29 +39,16 @@ h1 {
 }
 
 #Cannabinoid {
-    width: 100%;
     padding: 50px 0;
 }
-
-
 
 footer {
     background-color: #eee;
 }
 
-.strains {
-    
+.strains {   
     margin: 0 auto;
     max-width: 220px;
-}
-
-/*#jumboTextStrains {
-    margin-right: 40px;
-    padding-right: 70px;
-}
-*/
-.jumbotron {
-    padding-bottom: 25px;
 }
 
 .image-responsive {
