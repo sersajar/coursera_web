@@ -11,8 +11,13 @@
     margin-top: 20px;
 }
 
-h1 {
+#title {
+    margin-top: 20px;
     padding: 20px;
+}
+
+#titleStrain {
+    margin-left: -80px;
 }
 
 #nav-logo {
