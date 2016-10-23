@@ -36,22 +36,22 @@
                   <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
                </li>               
                <li class="dropdown">
-                  <a href="strains.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                  <a id="aToggle" href="strains.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role=menu>
                       <li><a href="strains.html"><strong>All Our Strains</strong></a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Classic</li>
-                      <li><a href="#">Yumbolt Tangerine</a></li>
-                      <li><a href="#">One peace</a></li>
-                      <li><a href="#">MasK Cheesee </a></li>
-                      <li><a href="#">White Willow</a></li>
+                      <li><a href="#yumbolttab" data-toggle="tab">Yumbolt Tangerine</a></li>
+                      <li><a href="#onepeacetab" data-toggle="tab">One peace</a></li>
+                      <li><a href="#masquetab" data-toggle="tab">MasK Cheesee </a></li>
+                      <li><a href="#willowtab" data-toggle="tab">White Willow</a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Autos</li>
-                      <li><a href="#">Critical Express</a></li>
-                      <li><a href="#">Tutti Frutti Ya!</a></li>
+                      <li><a href="#criticaltab" data-toggle="tab">Critical Express</a></li>
+                      <li><a href="#tuttitab" data-toggle="tab">Tutti Frutti Ya!</a></li>
                   </ul>
                </li>               
-               <li class="active" >
+               <li class="active">
                   <a href="knowledge.html"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Knowledge</a>
                </li>
                <li>
@@ -61,10 +61,10 @@
 
             <ul class="nav navbar-nav navbar-right">
                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Language <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-language" aria-hidden="true"></span> Language <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="#" class="language" rel="es-ES"><img src="/img/es_ES.png" alt="Español" /></a></li>
-                    <li><a href="#" class="language" rel="en-US"><img src="/img/en_US.png" alt="English" /></a></li>
+                    <li><a href="es/variedades.html" class="language" rel="es-ES"><img src="img/es_ES.png" alt="Español" /> Spanish</a></li>
+                    <li><a href="strains.html" class="language" rel="en-US"><img src="img/en_EN.png" alt="English" /> English</a></li>
                   </ul>
                </li>
             </ul>
@@ -149,7 +149,9 @@
         </div>
      </footer>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>

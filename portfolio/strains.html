@@ -34,19 +34,19 @@
                   <a href="index.html"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
                </li>               
                <li class="active dropdown">
-                  <a href="strains.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
-                  <ul class="dropdown-menu">
+                  <a id="aToggle" href="strains.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> Strains <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role=menu>
                       <li><a href="strains.html"><strong>All Our Strains</strong></a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Classic</li>
-                      <li><a href="#">Yumbolt Tangerine</a></li>
-                      <li><a href="#onepeacetab">One peace</a></li>
-                      <li><a href="#">Cheese Masque </a></li>
-                      <li><a href="#">White Willow</a></li>
+                      <li><a href="#yumbolttab" data-toggle="tab">Yumbolt Tangerine</a></li>
+                      <li><a href="#onepeacetab" data-toggle="tab">One peace</a></li>
+                      <li><a href="#masquetab" data-toggle="tab">MasK Cheesee </a></li>
+                      <li><a href="#willowtab" data-toggle="tab">White Willow</a></li>
                       <li role="separator" class="divider"></li>
                       <li class="dropdown-header">Autos</li>
-                      <li><a href="#">Critical Express</a></li>
-                      <li><a href="#">Tutti Frutti Ya!</a></li>
+                      <li><a href="#criticaltab" data-toggle="tab">Critical Express</a></li>
+                      <li><a href="#tuttitab" data-toggle="tab">Tutti Frutti Ya!</a></li>
                   </ul>
                </li>               
                <li>
@@ -59,10 +59,10 @@
 
             <ul class="nav navbar-nav navbar-right">
                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Language <span class="caret"></span></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="fa fa-language" aria-hidden="true"></span> Language <span class="caret"></span></a>
                   <ul class="dropdown-menu" role="menu">
-                    <li><a href="es/index.html" class="language" rel="es-ES"><img src="img/es_ES.png" alt="Español" /></a></li>
-                    <li><a href="strains.html" class="language" rel="en-US"><img src="img/en_EN.png" alt="English" /></a></li>
+                    <li><a href="es/variedades.html" class="language" rel="es-ES"><img src="img/es_ES.png" alt="Español" /> Spanish</a></li>
+                    <li><a href="strains.html" class="language" rel="en-US"><img src="img/en_EN.png" alt="English" /> English</a></li>
                   </ul>
                </li>
             </ul>
@@ -77,17 +77,16 @@
 
       <div class="row row-header">
          <div class="col-xs-12 col-sm-9">
-            <p style="padding:5px;"></p>
-            <h1 id="titleStrain">4x4 Strains</h1>
-            <p id="jumboTextStrains">We select, cross and stabilize our strains using old school methods.<br> At the moment have a few girls in our array of creations.<br><br><small>Click on the buttons to change the view between Classic and Autos</small></p>
+            
+            <h1 id="title">4x4 Strains</h1>
+            <p id="jumboTextStrains">We select, cross and stabilize our strains using old school methods.<br> At the moment have a few girls in our array of creations.</p>
+            
+            <a href="#classic" type="button" class="btn btn-info btn-strain" role="button">Classic</a>             
+            <a href="#autos" type="button" class="btn btn-info btn-strain" role="button">Autos</a>
          </div>
 
          <div style="margin: 0 auto;" class="col-xs-12 col-sm-3"">
-            <img id="logo-jumbo" src="img/logo.png" alt="logo-index">
-            <p style="padding:5px;"></p>
-
-            <a href="#classic" type="button" class="btn btn-info btn-block strains" role="button">Classic</a>             
-            <a href="#autos" type="button" class="btn btn-info btn-block strains" role="button">Autos</a>
+            <img id="logo-jumbo" src="img/logo.png" alt="logo-index">  
          </div>
       </div>
 
@@ -120,38 +119,38 @@
                 <li role="presentation"><a href="#masquetab"
                  aria-controls="masquetab" role="tab"
                  data-toggle="tab">Cheese Masque</a></li>
-                <li role="presentation"><a href="#widowtab"
-                 aria-controls="windowtab" role="tab"
+                <li role="presentation"><a href="#willowtab"
+                 aria-controls="willowtab" role="tab"
                  data-toggle="tab">White Willow</a></li>
             </ul>
    
             <div class="tab-content">
                <div role="tabpanel" class="tab-pane fade in active" id="yumbolttab">
                   <h3>Yumbolt</h3>
-                  <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
-                  <p style="padding:10px;"></p>
-                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+                  <p class="textStrains">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em></p>
+                  <p class="textStrains" style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/yumbolt01.jpg" alt="cogollo con tonos morados">
                </div>
 
-               <div role="tabpanel" class="tab-pane" id="onepeacetab">
+               <div role="tabpanel" class="tab-pane fade" id="onepeacetab">
                   <h3>One Peace</h3>
-                  <p>Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
-                  <p style="padding:10px;"></p>
-                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+                  <p class="textStrains">Our CFO, Danny, as he is affectionately referred to by his colleagues, comes from a long established family tradition in farming and produce. His experiences growing up on a farm in the Australian outback gave him great appreciation for varieties of food sources. As he puts it in his own words, <em>Everything that runs, wins, and everything that stays, pays!</em></p>
+                  <p class="textStrains" style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/onepeace-peque.jpg" alt="cogollo con tonos morados">
                </div>
     
                <div role="tabpanel" class="tab-pane" id="masquetab">
                   <h3>Cheese Masque</h3>
-                  <p>Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
-                  <p style="padding:10px;"></p>
-                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+                  <p class="textStrains">Blessed with the most discerning gustatory sense, Agumbe, our CFO, personally ensures that every dish that we serve meets his exacting tastes. Our chefs dread the tongue lashing that ensues if their dish does not meet his exacting standards. He lives by his motto, <em>You click only if you survive my lick.</em></p>
+                  <p class="textStrains" style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/masque01.jpg" alt="cogollo con tonos morados">
                </div>
                          
-               <div role="tabpanel" class="tab-pane" id="widowtab">
+               <div role="tabpanel" class="tab-pane" id="willowtab">
                   <h3>White Willow </h3>
-                  <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
-                  <p style="padding:10px;"></p>
-                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
+                  <p class="textStrains">Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                  <p class="textStrains" style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/widow01.jpg" alt="cogollo white willow">
                </div>
             </div>
 
@@ -167,7 +166,7 @@
             <p style="padding:10px;"></p>
             <ul class="nav nav-tabs" role="tablist">
                <li role="presentation" class="active">
-                  <a href="#criticaltab" aria-controls="criticaltab" role="tab" data-toggle="tab">Critical</a>
+                  <a href="#criticaltab" aria-controls="criticaltab" role="tab" data-toggle="tab">Critical Express</a>
                </li>
                <li role="presentation"><a href="#tuttitab"
                  aria-controls="tuttitab" role="tab"
@@ -176,15 +175,32 @@
 
             <div class="tab-content">
                <div role="tabpanel" class="tab-pane fade in active" id="criticaltab">
-                  <h3>Critical</h3>
-                  <p>Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which <em>The Frying Pan</em> became well known. He brings his zeal for fusion cuisines to this restaurant, pioneering cross-cultural culinary connections.</p>
-                  <p style="padding:10px;"></p>
-                  <img class="media-object img-thumbnail image-responsive" src="img/auto-fruity-001.JPG" alt="cogollo con tonos morados">
+                  <h3>Critical Express</h3>
+                  <p class="textStrains">Our CEO, Peter, credits his hardworking East Asian immigrant parents who undertook the arduous journey to the shores of America with the intention of giving their children the best future. His mother's wizardy in the kitchen whipping up the tastiest dishes with whatever is available inexpensively at the supermarket, was his first inspiration to create the fusion cuisines for which</p>
+                  <p class="textStrains" style="padding:10px;"></p>
+                  <img class="media-object img-thumbnail image-responsive" src="img/critical-1plano.jpg" alt="cogollo con tonos morados">
                </div>
 
                <div role="tabpanel" class="tab-pane" id="tuttitab">
                   <h3>Tutti Frutti Ya</h3>
-                  <p>Award winning three-star Michelin chef with wide International experience having worked closely with whos-who in the culinary world, he specializes in creating mouthwatering Indo-Italian fusion experiences. He says, <em>Put together the cuisines from the two craziest cultures, and you get a winning hit! Amma Mia!</em></p>
+                  <p class="textStrains">Our all star plant, this jewel of cannabis evolution is a "delicatessen". TuttiFrutti come from crossing several sweet and fruity plants, crossing and crossing the most vigouros and sweeter plants during 8 generations.<br><br> Outdoor it grows in 10 weeks, taking longer if you grow it in the ground.
+This marvelous plant, looks great because of its colors, when it starts to ripen her color go out and you can see pinks and purples tones and shades resulting in a pleasant visual effect.<br><br>
+Inoor it takes no longer than 10 weeks, it can produce up to 50 gr per plant if she has enough place and enough substrate, being more typical 30-35 gr per plant. You must have a good ventilation if you want to keep sane your buds, keeping mold away.<br><br></p>
+
+                  <p class="textStrains">Genetics = Syrup x Secret Auto Genetic <br>
+
+                     Indoor flowering time = 65-70 days from germination.<br>
+
+                     Outdor flowering time = in 7L pots: 65-70 days.<br>
+                  in ground: 75-85 dias.
+
+                     Indoor production = 500-700 gr x m2 <br>
+
+                     Outdoor production = up to 150 gr x plant <br>
+
+                     Sabor y Aroma = Sweet, sweet very sweet, almost sickeningly sweet. Smelling like candy and marshmallow and some of them smells exactly as water-melon and/or melon lollipop. <br>
+
+                     Efect = Relaxing effect and euphoric at the same time, makes you silly laugh, medium-high effect. Really good high to be creative.</p>
                   <p style="padding:10px;"></p>
                   <img class="media-object img-thumbnail image-responsive" src="img/auto-fruity-001.JPG" alt="cogollo brillante">
                </div>
@@ -237,7 +253,9 @@
       </div>
    </footer>
 
-<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/app.js"></script>
+
 </body>
 </html>
