@@ -5,8 +5,24 @@ $(document).ready(function(){
 		$("footer").css('background-color', randomColor);
 	});
 
+    $('footer').click(function() {
+        $('footer').css('background-image', 'url(img/Cannabinoid.jpg)');
+    });
+
+
+
+    // $('#aToggle').click(function(e) {
+
+    //     $(this).toggleClass('disabled');
+    //     e.preventDefault();
+    //     console.log("hey");
+    //});
 });
 
+$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+    });
 
 //function to get a random html color
 
