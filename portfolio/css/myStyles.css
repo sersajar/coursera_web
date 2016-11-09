@@ -1,3 +1,16 @@
+a>div {
+  display: none;
+
+}
+
+a>div>img {
+  width: 98%;
+}
+
+a:hover>div {
+  display: block;
+}
+
 .jumbotron {
     text-align: center;
     padding-bottom: 25px;
