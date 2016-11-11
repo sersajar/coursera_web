@@ -7,6 +7,12 @@ a>div>img {
   width: 98%;
 }
 
+@media screen and (max-width: 767px) {
+    a>div>img {
+        width: 30%;
+    }
+}
+
 a:hover>div {
   display: block;
 }
