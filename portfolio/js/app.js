@@ -8,16 +8,6 @@ $(document).ready(function () {
 		$("footer").css('background-color', randomColor);
 	});
 
-    $(".knowledgePics").click(function showPic() {
-        
-        if (this.id == "acc1") {
-            $("#chPic").prepend('<img src="img/germ.jpg">');   
-            this.id = undefined;  
-         } else if (this.id == "acc2") {
-            $("#chPic").prepend('<img src="img/botella.jpg">');
-             
-         } 
-    });
     // $('#aToggle').click(function(e) {
 
     //     $(this).toggleClass('disabled');
