@@ -1,3 +1,10 @@
+.textIndex {
+    margin-left: 30px;
+    background-color: #fff;
+    border-radius: 4px;
+    border: solid 2px #ddd;
+}
+
 a>div {
   display: none;
 
@@ -7,16 +14,38 @@ a>div>img {
   width: 100%;
 }
 
+.jumbotron {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
 @media screen and (max-width: 767px) {
     a>div>img {
         width: 30%;
     }
-    
+
     .textIndex {
-    margin-left: 30px;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    border: solid 2px #ddd;  
+      width: 75%;
+      margin-left: 35px;
+      background-color: #f5f5f5;
+      border-radius: 4px;
+      border: solid 2px #ddd;
+    }
+
+    h2 {
+      font-size: 3vh;
+    }
+
+    p {
+      font-size: 0.9em;
+    }
+
+    .jumbotron p {
+      font-size: 2vh;
+    }
+
+    div>ul>li {
+      font-size: 0.9em;
     }
 
 }
@@ -26,13 +55,10 @@ a:hover>div {
 }
 
 body {
-    background-image: url(../img/brick_wall_background.jpg) 
-} 
-
-.jumbotron {
-    text-align: center;
-    padding-bottom: 25px;
+    background-image: url(../img/brick_wall_background.jpg)
 }
+
+
 
 #logo-jumbo {
     width: 95%;
@@ -48,9 +74,10 @@ body {
 }
 
 .btn-strain {
+
     font-size: 1.4em;
     height: 45px;
-    width: 25%;
+    width: 30%;
     margin: 0 10px;
 }
 
@@ -65,15 +92,28 @@ body {
     width: 50px;
 }
 
-#cbd {
-    margin-top: 20px;
-    margin-left: 20px;
-    width: 95%;
-    max-width: 250px;
+.image-responsive {
+    margin: 15px auto;
+    width: 100%;
+}
+
+#Cannabinoid {
+    border-radius: 4px;
+    border: solid 2px #ddd;
+    background-color: #fff;
+    width: 98%;
+    padding: 5px 5px;
 }
 
 .hovMouse:hover {
     border: solid 2px yellow;
+}
+
+#cbd {
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 95%;
+    max-width: 250px;
 }
 
 #mol {
@@ -82,15 +122,46 @@ body {
     width: 90%;
     max-width: 250px;
     margin-top: 20px;
-    padding-bottom: 20px;
 }
 
-#Cannabinoid {
-    border-radius: 4px;
-    border: solid 2px #ddd;
-    background-color: #ddd;
-    width: 98%;
-    padding: 15px 15px;
+@media screen and (max-width: 588px) {
+
+    #cbd {
+        margin-top: 20px;
+        position: relative;
+        left:  5px;
+        width: 45%;
+        max-width: 250px;
+    }
+    #mol {
+        background-color: #f5f5f5;
+        position: relative;
+        left: 2px;
+        width: 40%;
+        max-width: 250px;
+        margin-top: 20px;
+
+    }
+
+}
+
+@media screen and (max-width: 337px) {
+
+    #cbd {
+        margin-top: 20px;
+        margin-left:  60px;
+        width: 45%;
+        max-width: 250px;
+    }
+    #mol {
+        background-color: #f5f5f5;
+        margin-left: 70px;
+        width: 40%;
+        max-width: 250px;
+        margin-top: 20px;
+
+    }
+
 }
 
 footer {
@@ -105,21 +176,35 @@ picture {
     margin: 0 auto;
 }
 
-h2#know-h2 {
+.know-h2 {
     padding: 10px;
     background-color: #f5f5f5;
     border-radius: 4px;
+    border: solid 4px #ddd;
+}
+
+h3.strains-h3 {
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: solid 2px #ddd;
+  background-color: #f5f5f5;
 }
 
 h3 {
+    margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.textIndex {
-    margin-left: 30px;
-    background-color: #f5f5f5;
-    border-radius: 4px;
-    border: solid 2px #ddd;  
+address {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+}
+
+h4 {
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  padding: 10px;
 }
 
 .textStrains {
@@ -132,14 +217,11 @@ h3 {
     padding: 10px 20px;
 }
 
-.image-responsive {
-    margin: 15px auto;
-    width: 100%;
-}
+
 
  .verFondo {
      padding: 0px 10px;
-     background-color: floralwhite
+     background-color: white;
 }
 
 /* Styling Form */
@@ -161,7 +243,7 @@ h3 {
 
 #headerForm {
   height: 75px;
-  background: rgba(0,0,0,.05);
+  background: #fff;
   line-height: 75px;
   padding-left: 20px;
   border-radius: 5px 5px 0 0;
@@ -200,8 +282,11 @@ textarea {
   border-top: solid 1px #ddd;
 }
 
-#formButton button {
+#formButton {
+  background-color: #fff;
+}
 
+#formButton button {
     margin: 30px 10px;
 }
 
