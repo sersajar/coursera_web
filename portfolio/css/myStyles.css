@@ -302,6 +302,6 @@ form {
 
 .first:focus, .last:focus, .email:focus, textarea:focus {
   outline: none;
-  background: rgba(52, 152, 219,.1);
+  background: rgba(52, 152, 219);
   color: rgba(51,51,51,.7);
 }
