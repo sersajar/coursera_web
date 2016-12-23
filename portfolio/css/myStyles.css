@@ -284,6 +284,7 @@ textarea {
 }
 
 #formButton {
+  border-radius: 0px 0px 4px 4px;
   background-color: #fff;
 }
 
@@ -297,7 +298,7 @@ textarea {
 
 form {
     height: 440px;
-    border: solid 1px #ddd;
+
 }
 
 .first:focus, .last:focus, .email:focus, textarea:focus {
